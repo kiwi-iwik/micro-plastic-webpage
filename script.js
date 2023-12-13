@@ -15,4 +15,4 @@ function aboutus() {
         });
       });
 }
-aboutus
+aboutus()
