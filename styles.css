@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: lightblue;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+
+  header nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    left: -50%;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    top: 10%;
+  }
+  .container img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+  }
+  
