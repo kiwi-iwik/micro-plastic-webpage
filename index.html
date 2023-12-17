@@ -4,20 +4,37 @@
   <meta charset="UTF-8">
   <title>Longitude and Latitude Lines</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Plastic Detection</h1>
+    <h1>海洋微塑膠檢測</h1>
     <nav>
       <ul>
+        <li><a href="how-to-work">原理發想</a></li>
+        <li><a href="#our-tool">使用工具</a></li>
         <li><a href="#about-us">關於我們</a></li>
+        
       </ul>
     </nav>
   </header>
-  <div class="container">
-    <img src="tw.svg" >
+  <div class="parent">
+    <div class="slogan">
+      <h2>台灣沿海水質狀況</h2>
+    </div>
+    <div class="container">
+      <div class="image-container">
+        <img src="tw.svg" alt="TW" id="zoomable-image">
+        <div class="zoom-controls">
+          <button id="zoom-in">+</button>
+          <button id="zoom-out">-</button>
+        </div>
+      </div>   
+    </div>
   </div>
+  
   <section id="about-us">
     <h2>About Us</h2>
   </section>
