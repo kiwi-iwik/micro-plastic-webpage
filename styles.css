@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: lightblue;
+    background-color: #fff;
   }
   header {
     position: fixed;
@@ -24,13 +24,13 @@ body, html {
   }
 
   header nav ul {
+    position: relative;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    right: 20%;
   }
 
   header nav ul li {
-    display: inline;
+    display: inline-block;
     margin-left: 20px;
   }
 
@@ -38,19 +38,76 @@ body, html {
     position: relative;
     color: white;
     text-decoration: none;
-    left: -50%;
+ 
   }
-  .container {
-    position: relative;
+  .parent{
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  .container{
+    margin-top: 10%;
+    height: 90%;
+    width: 80%; 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95%; 
-    top: 8%;
+    border: 10px solid transparent;
+    border-radius: 10%;
+    position: absolute;
+    background-color: #73b2ff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .slogan{
+    position: relative;
+    right: 26%;
+    margin-bottom: 25%;
+    z-index: 2;
+  }
+  .slogan h2{
+    width: 110%;
+    font-size: 250%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    height: 100%; 
+    
   }
   .container img {
-    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
-    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+    position: relative;
+    left: 20%;
+    max-width: 50%; 
+    max-height: 100%; 
+  }
+  #zoomable-image {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .zoom-controls {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .zoom-controls button {
+    position: relative;
+    padding: 5px 10px;
+    margin-right: 10px;
+    right: 70%;
+  }
+  #zoom-in{
+    font-size: 200%;
+  }
+  #zoom-out{
+    font-size: 200%;
   }
   section{
     margin-top: 10%;
@@ -58,6 +115,5 @@ body, html {
     text-align: center;
   }
   #about-us{
-    border-radius: 10%;
     background-color: #fff;
   }
