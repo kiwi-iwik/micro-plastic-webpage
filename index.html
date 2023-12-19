@@ -26,7 +26,32 @@
     </div>
     <div class="container">
       <div class="image-container">
-        <img src="tw.svg" alt="TW" id="zoomable-image">
+        <img src="tw.svg" alt="TW" id="zoomable-image" class="modal-image">
+        <div class="modal" id="myModal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="yilan-container">
+              <img src="yilan.png" alt="Yilan" id="yelan-image" class="inmodal-image">
+            </div>
+            <div class="side-content">
+              <div class="info">
+                <h2>宜蘭</h2>
+                <div>
+                  <span>種類:</span>
+                  <span class="type-value">XXXX</span>
+                </div>
+                <div>
+                  <span>濃度:</span>
+                  <span class="concentration-value">XXXX</span>
+                </div>
+                <div>
+                  <span>平均濃度 (24 hr):</span>
+                  <span class="concentration-24hr-value">XXXX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="zoom-controls">
           <button id="zoom-in">+</button>
           <button id="zoom-out">-</button>
